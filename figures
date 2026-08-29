@@ -27,7 +27,7 @@ axes[-1].set_xlabel("Date")
 
 plt.tight_layout()
 plt.savefig(
-    "figures/field_production_profile.png",
+    "figures/Well-production-lifecycle.png",
     dpi=300,
     bbox_inches="tight"
 plt.show()
@@ -43,12 +43,12 @@ plt.title("Well Contribution to Total Oil Production")
 
 plt.tight_layout()
 plt.savefig(
-    "figures/field_production_profile.png",
+    "figures/Well-contribution.png",
     dpi=300,
     bbox_inches="tight"
 plt.show()
 
-#Field production profile
+# Field production profile
 plt.figure(figsize=(12, 6))
 
 plt.plot(
