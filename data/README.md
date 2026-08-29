@@ -8,7 +8,7 @@ The dataset contains historical daily production and operational data from multi
 
 The dataset was obtained from:
 
-**Kaggle:** [Volve Oil Field Production Data](PASTE-YOUR-KAGGLE-LINK-HERE)
+**Kaggle:** [Volve Oil Field Production Data]((https://www.kaggle.com/datasets/lamyalbert/volve-production-data))
 
 The dataset is originally associated with **Equinor's Volve field open data**.
 
