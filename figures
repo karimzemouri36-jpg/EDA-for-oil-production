@@ -1,3 +1,4 @@
+# Well production lifecycle
 wells = df_clean["NPD_WELL_BORE_NAME"].unique()
 
 fig, axes = plt.subplots(
@@ -24,6 +25,42 @@ for ax, well in zip(axes, wells):
 
 axes[-1].set_xlabel("Date")
 
+plt.tight_layout()
+plt.savefig(
+    "figures/field_production_profile.png",
+    dpi=300,
+    bbox_inches="tight"
+plt.show()
+
+# Well contribution
+plt.figure(figsize=(10, 6))
+
+well_contribution_pct.sort_values().plot(kind="barh")
+
+plt.xlabel("Contribution to Total Oil Production (%)")
+plt.ylabel("Well")
+plt.title("Well Contribution to Total Oil Production")
+
+plt.tight_layout()
+plt.savefig(
+    "figures/field_production_profile.png",
+    dpi=300,
+    bbox_inches="tight"
+plt.show()
+
+#Field production profile
+plt.figure(figsize=(12, 6))
+
+plt.plot(
+    field_production.index,
+    field_production.values
+)
+
+plt.xlabel("Date")
+plt.ylabel("Total Oil Production")
+plt.title("Field Oil Production Profile Over Time")
+
+plt.xticks(rotation=45)
 plt.tight_layout()
 plt.savefig(
     "figures/field_production_profile.png",
